@@ -1,17 +1,10 @@
 import React, { Component } from 'react';
-import { View, Text, TextInput, Button, TouchableHighlight, Image } from 'react-native';
+import { View, Text, TextInput, Button, TouchableHighlight, Image, StatusBar } from 'react-native';
 
 export default class Login extends Component {
     render() {
         return (
-            <View style={{ flex: 1, padding: 10 }} >
-                <View style={{ flex: 2, marginTop: 30, alignItems: 'center' }}>
-                    <Image style={{ height: 200, width: 200 }} source={require('../../img/ic_launcher/web_hi_res_512.png')} />
-                </View>
-                <View>
-                    {/*Erro aparece aqui */}
-                    <Text></Text>
-                </View>
+            <View style={{ flex: 1, padding: 10, backgroundColor: '#9c27b0' }} >
                 <View style={{ flex: 1, margin: 10 }}>
                     <TextInput
                         style={{ fontSize: 20, height: 45, marginBottom: 10 }}
@@ -26,6 +19,9 @@ export default class Login extends Component {
                         color='#9c27b0'
                         onPress={() => false}
                     />
+                </View>
+                <View>
+                    <Text>{/*Erro aparece aqui */}</Text>
                 </View>
             </View>
         )
